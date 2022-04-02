@@ -8,4 +8,5 @@ jobs:
         run: echo Hello world
 
   log-my-world:
-    run: echo myworld
+    steps:
+      run: echo myworld
