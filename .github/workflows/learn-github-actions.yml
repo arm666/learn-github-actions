@@ -4,11 +4,10 @@ jobs:
   create-build-file:
     runs-on: ubuntu-latest
     steps:
-      - name: prints hello world
-        run: echo Hello world
-
-  log-my-world:
-    runs-on: ubuntu-latestx
-    steps:
-      - name: echo my world
-        run: echo myworld
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "14"
+          cache: "npm"
+      - run: npm install
+      - run: npm run export
