@@ -1,0 +1,8 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  create-build-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: prints hello world
+        run: echo, Hello world
