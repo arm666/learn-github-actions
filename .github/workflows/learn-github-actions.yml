@@ -9,4 +9,5 @@ jobs:
 
   log-my-world:
     steps:
-      run: echo myworld
+      - name: echo my world
+        run: echo myworld
