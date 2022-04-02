@@ -8,6 +8,7 @@ jobs:
         run: echo Hello world
 
   log-my-world:
+    runs-on: ubuntu-latestx
     steps:
       - name: echo my world
         run: echo myworld
