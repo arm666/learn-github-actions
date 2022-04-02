@@ -6,3 +6,6 @@ jobs:
     steps:
       - name: prints hello world
         run: echo Hello world
+
+  log-my-world:
+    run: echo myworld
